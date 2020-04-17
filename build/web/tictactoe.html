@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+/*(document).ready(function(){
+    $("#sqr").click(function(){
+        $(".col-sm-4").html("<b>Hello world!</b>");
+    });
+});*/
+
+
+var i=1;
+/*if(i%2=0)
+/{
+$(document).ready(function(){
+    $("#sqr"+i).click(function(){
+       $("#sqr"+i).html("<b>Hello world!</b>");i++;
+    });
+});
+}
+
+else
+{
+$(document).ready(function(){
+    $("#sqr"+i).click(function(){
+       $("#sqr"+i).html("<b>Hello world!</b>");
+    });
+});
+}*/
+
+
+function TicTac(){
+if(i%2==0){
+document.getElementById('sqr'+i).innerHTML="x";
+}
+
+else{
+document.getElementById('sqr'+i).innerHTML="o";
+}
+i++;
+}
+
+</script>
+
+
+<style>
+.box{
+background-color:yellow;
+width:100px;
+height:100px;
+border:1px solid red;
+float:left;
+}
+</style>
+
+
+
+</head>
+
+
+<body>
+
+<div class="container">
+<div class="row">
+<div class="col-sm-4 box" id="sqr1" onclick="TicTac()"></div>
+<div class="col-sm-4 box" id="sqr2" onclick="TicTac()"></div>
+<div class="col-sm-4 box" id="sqr3" onclick="TicTac()"></div>
+</div>
+
+<div class="row">
+<div class="col-sm-4 box" id="sqr4" onclick="TicTac()"></div>
+<div class="col-sm-4 box" id="sqr5" onclick="TicTac()"></div>
+<div class="col-sm-4 box" id="sqr6" onclick="TicTac()"></div>
+</div>
+
+
+<div class="row">
+<div class="col-sm-4 box" id="sqr7" onclick="TicTac()"></div>
+<div class="col-sm-4 box" id="sqr8" onclick="TicTac()"></div>
+<div class="col-sm-4 box" id="sqr9" onclick="TicTac()"></div>
+</div>
+</div>
+
+
+
+
+
+</body>
+</html>
+
